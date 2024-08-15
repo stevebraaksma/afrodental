@@ -1,0 +1,22 @@
+name: afrodental
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - afrodental/base
+  - afrodental/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - afrodental/user
+  core/drupal.dropbutton:
+    - afrodental/dropbutton
+  core/drupal.dialog:
+    - afrodental/dialog
+  file/drupal.file:
+    - afrodental/file
+  core/drupal.progress:
+    - afrodental/progress
+description: ''
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.3.2'
