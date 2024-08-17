@@ -46,6 +46,8 @@ base:
         weight: -10
       css/components/ui-dialog.css:
         weight: -10
+      css/components/dentists.css:
+        weight: -10
 dialog:
   version: VERSION
   css:
@@ -68,12 +70,12 @@ image-widget:
   version: VERSION
   css:
     component:
-      css/components/image-widget.css: {  }
+      css/components/image-widget.css: {}
 indented:
   version: VERSION
   css:
     component:
-      css/components/indented.css: {  }
+      css/components/indented.css: {}
 messages:
   version: VERSION
   css:
@@ -96,7 +98,7 @@ search-results:
   version: VERSION
   css:
     component:
-      css/components/search-results.css: {  }
+      css/components/search-results.css: {}
 user:
   version: VERSION
   css:
