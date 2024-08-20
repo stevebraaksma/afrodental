@@ -90,7 +90,14 @@ HERRRRRREEEE
       <img src="https://i.imgur.com/KykRUCV.jpeg" class="profile">
   </div>
   <h3 class="profile-name">{{ content.field_first_name.0 }} {{ content.field_last_name.0 }}</h3>
-  <p class="about">African / Ghana<br>Madison, Wisconsin</p>
+  <p class="about">African / Ghana<br>
+
+
+  <div class="about-2">
+    <div>{{ content.field_city.0 }}&nbsp;/&nbsp;</div>
+    <div>{{ content.field_zone.0 }}</div>
+  </div>
+
   <input type="checkbox" id="toggleCheckbox" class="toggle-checkbox">
   <label for="toggleCheckbox" class="btn">Contact</label>
   <div class="card-contact-wrapper">

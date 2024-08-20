@@ -8,11 +8,23 @@
 
 body {
   background: #222;
-  height: 100vh;
-  display: grid;
-  place-items: center;
   font-family: Montserrat;
   color: #b3afbf;
+  padding: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
 }
 
 .card {
@@ -26,19 +38,11 @@ body {
 }
 
 .cover-photo {
-  /*     position: relative;
-    background: url(https://i.imgur.com/jxyuizJ.jpeg);
-    background-size: cover;
-    height: 180px;
-    border-radius: 5px 5px 0 0; */
   margin-top: 20px;
 }
 
 .profile {
-  /*     position: absolute; */
   width: 120px;
-  bottom: -60px;
-  left: 15px;
   border-radius: 50%;
   border: 2px solid #222;
   border: 1px solid #7ce3ff;
@@ -104,33 +108,41 @@ body {
 .icons i:hover {
   color: #7ce3ff;
 }
+
 .card-contact-wrapper svg {
   max-width: 20px;
   margin-right: 5px;
   margin-bottom: -4px;
 }
+
 .card-contact-wrapper {
   margin-left: auto;
   margin-right: auto;
   visibility: hidden;
 }
+
 .card-contact-wrapper a {
   text-decoration: none;
   color: inherit;
 }
+
 .card-contact {
   transition: transform 0.2s;
 }
+
 .card-contact:hover {
   color: #7ce3ff;
   transform: scale(1.01);
 }
+
 .toggle-checkbox:checked ~ .card-contact-wrapper {
   visibility: inherit;
 }
+
 .card-contact-wrapper:focus {
   visibility: inherit;
 }
+
 .card-contact-wrapper *:focus {
   visibility: inherit;
 }
@@ -146,3 +158,30 @@ body {
 /* body {
   background-color: green !important;
 } */
+
+/* here we want to filter all the address stuff so it just gets to State */
+.zone > .form-item {
+  display: none;
+}
+
+.zone-territory > .form-item:first-of-type {
+  display: none;
+}
+
+.zone-territory div label {
+  display: none;
+}
+
+.about-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation.menu--account {
+  display: flex;
+}
+ul.menu {
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+}
