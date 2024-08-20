@@ -1,0 +1,22 @@
+uuid: e1e338db-c023-4406-8a58-34d55867d152
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dentist
+id: node.dentist.promote
+field_name: promote
+entity_type: node
+bundle: dentist
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

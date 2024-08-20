@@ -1,0 +1,93 @@
+uuid: 73165cf8-f948-4e52-8c72-347503fe3583
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dentist.body
+    - field.field.node.dentist.field_city
+    - field.field.node.dentist.field_email
+    - field.field.node.dentist.field_first_name
+    - field.field.node.dentist.field_heritage
+    - field.field.node.dentist.field_heritage_country
+    - field.field.node.dentist.field_last_name
+    - field.field.node.dentist.field_phone
+    - field.field.node.dentist.field_zone
+    - node.type.dentist
+  module:
+    - address
+    - options
+    - telephone
+    - user
+id: node.dentist.teaser
+targetEntityType: node
+bundle: dentist
+mode: teaser
+content:
+  field_city:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_first_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_heritage:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_heritage_country:
+    type: address_country_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_last_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_phone:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_zone:
+    type: address_zone_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true

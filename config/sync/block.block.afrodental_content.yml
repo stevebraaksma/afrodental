@@ -1,0 +1,22 @@
+uuid: ae9c96e5-3aa0-491d-b7e2-211b64ea5a40
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - afrodental
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: afrodental_content
+theme: afrodental
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

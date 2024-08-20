@@ -1,0 +1,22 @@
+uuid: 92d1ec6a-7d62-4980-a77f-0bfa8fb07370
+langcode: en
+status: true
+dependencies:
+  theme:
+    - afrodental
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: afrodental_primary_local_tasks
+theme: afrodental
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

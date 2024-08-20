@@ -1,0 +1,97 @@
+uuid: b1d53f69-cb1a-439d-a354-69a13710f874
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dentist.body
+    - field.field.node.dentist.field_city
+    - field.field.node.dentist.field_email
+    - field.field.node.dentist.field_first_name
+    - field.field.node.dentist.field_heritage
+    - field.field.node.dentist.field_heritage_country
+    - field.field.node.dentist.field_last_name
+    - field.field.node.dentist.field_phone
+    - field.field.node.dentist.field_zone
+    - node.type.dentist
+  module:
+    - address
+    - options
+    - text
+    - user
+id: node.dentist.default
+targetEntityType: node
+bundle: dentist
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_city:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_first_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_heritage:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_heritage_country:
+    type: address_country_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_last_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_phone:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_zone:
+    type: address_zone_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
