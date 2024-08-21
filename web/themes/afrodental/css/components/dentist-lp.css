@@ -1,0 +1,15 @@
+h1 {
+  font-family: var(--aw-font-heading, ui-sans-serif), ui-sans-serif, system-ui,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+}

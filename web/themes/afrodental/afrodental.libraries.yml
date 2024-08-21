@@ -48,6 +48,8 @@ base:
         weight: -10
       css/components/dentists.css:
         weight: -10
+      css/components/dentist-lp.css:
+        weight: -10
 dialog:
   version: VERSION
   css:
