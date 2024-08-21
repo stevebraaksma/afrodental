@@ -76,9 +76,10 @@ body {
   transition: 0.2s;
   /* 	height: 30px; */
   display: inline-block;
+  text-decoration: none;
 }
 
-.btn:last-of-type {
+.btn.light {
   background: transparent;
   border-color: #7ce3ff;
   color: #7ce3ff;

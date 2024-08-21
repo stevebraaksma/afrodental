@@ -6,10 +6,43 @@ h1 {
 
 h1 {
   font-size: 3rem;
+  font-weight: 700;
+  color: rgb(229 231 235);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.page-node-type-home-page {
+  text-align: center;
+}
+
+.eyebrow {
+  color: rgb(191 219 254);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding-top: 3rem;
+}
+
+.intro {
+  color: rgb(203 213 225);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-cta {
+  border-radius: 9999px;
+  padding: 18px 32px;
 }
 
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 3.75rem;
+  }
+
+  .eyebrow {
+    padding-top: 5rem;
   }
 }
