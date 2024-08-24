@@ -153,27 +153,28 @@ display:
           value:
             dentist: dentist
           group: 1
-        field_zone_value:
-          id: field_zone_value
-          table: node__field_zone
-          field: field_zone_value
+        field_state_value:
+          id: field_state_value
+          table: node__field_state
+          field: field_state_value
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: string
-          operator: '='
-          value: ''
+          plugin_id: list_field
+          operator: or
+          value:
+            alabama: alabama
           group: 1
           exposed: true
           expose:
-            operator_id: field_zone_value_op
+            operator_id: field_state_value_op
             label: State
             description: ''
             use_operator: false
-            operator: field_zone_value_op
+            operator: field_state_value_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: state
+            identifier: field_state_value
             required: false
             remember: false
             multiple: false
@@ -182,7 +183,7 @@ display:
               anonymous: '0'
               content_editor: '0'
               administrator: '0'
-            placeholder: ''
+            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -195,6 +196,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+          reduce_duplicates: false
         field_heritage_value:
           id: field_heritage_value
           table: node__field_heritage

@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.dentist.field_heritage_country
     - field.field.node.dentist.field_last_name
     - field.field.node.dentist.field_phone
-    - field.field.node.dentist.field_zone
+    - field.field.node.dentist.field_state
     - node.type.dentist
   module:
     - address
@@ -82,12 +82,12 @@ content:
     third_party_settings: {  }
     weight: 107
     region: content
-  field_zone:
-    type: address_zone_default
+  field_state:
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 104
+    weight: 110
     region: content
   links:
     settings: {  }
