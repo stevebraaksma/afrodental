@@ -195,51 +195,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        field_city_value:
-          id: field_city_value
-          table: node__field_city
-          field: field_city_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: string
-          operator: '='
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_city_value_op
-            label: City
-            description: ''
-            use_operator: false
-            operator: field_city_value_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: city
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              content_editor: '0'
-              administrator: '0'
-            placeholder: City
-          is_grouped: false
-          group_info:
-            label: 'City (field_city)'
-            description: null
-            identifier: field_city_value
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1: {  }
-              2: {  }
-              3: {  }
         field_heritage_value:
           id: field_heritage_value
           table: node__field_heritage
