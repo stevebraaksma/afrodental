@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/address": "^2.0",
+        "drupal/build_hooks": "^3.3",
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",

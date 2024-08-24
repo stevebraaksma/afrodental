@@ -1,0 +1,33 @@
+uuid: 96e3d57e-9e6d-4fec-a85b-8d646b669c74
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_heritage
+field_name: field_heritage
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: african_american
+      label: African-American
+    -
+      value: african
+      label: African
+    -
+      value: afro_caribbean
+      label: Afro-Caribbean
+    -
+      value: other_african_heritage
+      label: 'Other African Heritage'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

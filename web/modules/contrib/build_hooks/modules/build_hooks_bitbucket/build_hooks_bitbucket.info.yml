@@ -1,0 +1,13 @@
+name: build_hooks_bitbucket
+type: module
+description: 'Trigger bitbucket pipelines builds that deploy a frontend environment.'
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+package: 'Build hooks'
+dependencies:
+  - drupal:build_hooks
+
+# Information added by Drupal.org packaging script on 2023-09-07
+version: '3.3.3'
+project: 'build_hooks'
+datestamp: 1694057964

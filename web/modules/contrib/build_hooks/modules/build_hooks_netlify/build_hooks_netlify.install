@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update hooks.
+ */
+
+/**
+ * Implements hook_update_last_removed().
+ */
+function build_hooks_netlify_update_last_removed() {
+  return 8201;
+}
