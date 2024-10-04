@@ -13,18 +13,17 @@ body {
   padding: 24px;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
+a {
+  font-family: Montserrat;
+  color: #b3afbf;
 }
 
-@media screen and (min-width: 1024px) {
-  body {
-    padding-left: 96px;
-    padding-right: 96px;
-  }
+.menu a {
+  font-size: 20px;
+}
+
+ul.menu a.is-active {
+  color: inherit;
 }
 
 .card {
@@ -41,7 +40,7 @@ body {
   margin-top: 20px;
 }
 
-.profile {
+.card .profile {
   width: 120px;
   border-radius: 50%;
   border: 2px solid #222;
@@ -79,10 +78,11 @@ input[type="submit"] {
   display: inline-block;
   text-decoration: none;
 }
+
 input[type="submit"] {
   width: 100%;
   max-width: 240px;
-  margin-top: 10px;
+  margin-top: 17px;
 }
 
 .btn.light {
@@ -184,9 +184,11 @@ input[type="submit"] {
   justify-content: center;
   align-items: center;
 }
+
 .navigation.menu--account {
   display: flex;
 }
+
 ul.menu {
   display: flex;
   margin-left: auto;
@@ -199,4 +201,114 @@ ul.menu {
   display: flex;
   flex-direction: column;
   max-width: 240px;
+}
+
+.view-content {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form--inline {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+select {
+  min-height: 40px;
+  font-size: 110%;
+}
+
+/* media queries */
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form--inline {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}
+
+/* when a new user creates a dentist profile, hide revision */
+#node-dentist-form
+  > div.js-form-item.form-item.js-form-type-vertical-tabs.form-type-vertical-tabs.js-form-item-.form-item-.form-no-label
+  > div {
+  display: none;
+}
+
+.tabs a {
+  text-decoration: underline;
+  color: #b3afbf;
+}
+.tabs a:hover {
+  color: #222;
+}
+.tabs a.is-active {
+  /* background-color: #b3afbf; */
+  background: #7ce3ff;
+  text-decoration: none;
+  color: #222;
+  cursor: default;
+}
+
+ul.tabs {
+  border-bottom: 2px #7ce3ff solid;
+  font-size: 20px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  font-size: 20px;
+}
+.form-item label {
+  padding-bottom: 8px;
+}
+
+input,
+optgroup,
+select,
+textarea {
+  font-size: 120%;
+  line-height: 1.5;
+}
+
+.user-form {
+  font-size: 20px;
+}
+
+.path-user input[type="submit"] {
+  font-size: 20px;
+  max-width: 280px;
+}
+
+#edit-mail--description,
+#edit-name--description,
+.js-form-item-user-picture-0,
+#edit-contact {
+  display: none;
+}
+
+.messages.messages--error {
+  display: none;
+}
+
+.layout-container {
+  margin: 0 !important;
 }

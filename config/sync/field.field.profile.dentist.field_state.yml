@@ -1,0 +1,23 @@
+uuid: b9c0f967-73a9-4ca0-9e8c-6d0d14ddaa86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_state
+    - profile.type.dentist
+  module:
+    - options
+id: profile.dentist.field_state
+field_name: field_state
+entity_type: profile
+bundle: dentist
+label: State
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: illinois
+default_value_callback: ''
+settings: {  }
+field_type: list_string

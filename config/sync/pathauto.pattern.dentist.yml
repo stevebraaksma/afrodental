@@ -1,0 +1,22 @@
+uuid: d2a18a9e-4a48-42e7-8dd2-c13e63d940ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: dentist
+label: Dentist
+type: 'canonical_entities:node'
+pattern: '/dentist/[node:title]'
+selection_criteria:
+  818063c6-6d4d-4d31-8dd4-29fffea989a2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 818063c6-6d4d-4d31-8dd4-29fffea989a2
+    context_mapping:
+      node: node
+    bundles:
+      dentist: dentist
+selection_logic: and
+weight: -5
+relationships: {  }

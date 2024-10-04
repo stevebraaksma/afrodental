@@ -1,0 +1,82 @@
+uuid: 3e7c9927-44ff-4ebd-aa7e-8aa5de22de9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.dentist.field_city
+    - field.field.profile.dentist.field_email
+    - field.field.profile.dentist.field_first_name
+    - field.field.profile.dentist.field_heritage_country
+    - field.field.profile.dentist.field_heritage_region
+    - field.field.profile.dentist.field_last_name
+    - field.field.profile.dentist.field_phone
+    - field.field.profile.dentist.field_state
+    - profile.type.dentist
+  module:
+    - address
+    - options
+id: profile.dentist.default
+targetEntityType: profile
+bundle: dentist
+mode: default
+content:
+  field_city:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_first_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_heritage_country:
+    type: address_country_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_heritage_region:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_last_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_phone:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_state:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+hidden: {  }

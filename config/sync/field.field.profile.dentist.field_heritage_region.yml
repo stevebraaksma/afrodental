@@ -1,0 +1,21 @@
+uuid: e4cf25f3-3a85-4db0-9a81-a7c59946e348
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_heritage_region
+    - profile.type.dentist
+  module:
+    - options
+id: profile.dentist.field_heritage_region
+field_name: field_heritage_region
+entity_type: profile
+bundle: dentist
+label: 'Heritage Region'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

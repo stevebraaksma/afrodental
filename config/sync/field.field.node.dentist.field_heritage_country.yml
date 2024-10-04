@@ -15,7 +15,9 @@ label: 'Heritage Country'
 description: ''
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: NG
 default_value_callback: ''
 settings:
   available_countries: {  }
