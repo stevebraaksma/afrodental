@@ -7,6 +7,8 @@ dependencies:
     - field.storage.profile.field_last_name
     - profile.type.dentist
   module:
+    - address
+    - options
     - profile
 id: duplicate_of_dentist_profiles_view
 label: 'Dentist Profiles View Content'
@@ -195,6 +197,134 @@ display:
           plugin_id: bundle
           value:
             dentist: dentist
+        field_state_value:
+          id: field_state_value
+          table: profile__field_state
+          field: field_state_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: list_field
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_state_value_op
+            label: State
+            description: ''
+            use_operator: false
+            operator: field_state_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_state_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+        field_heritage_region_value:
+          id: field_heritage_region_value
+          table: profile__field_heritage_region
+          field: field_heritage_region_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: list_field
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_heritage_region_value_op
+            label: 'Heritage Region'
+            description: ''
+            use_operator: false
+            operator: field_heritage_region_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_heritage_region_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+        field_heritage_country_value:
+          id: field_heritage_country_value
+          table: profile__field_heritage_country
+          field: field_heritage_country_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: country
+          operator: in
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_heritage_country_value_op
+            label: 'Heritage Country'
+            description: ''
+            use_operator: false
+            operator: field_heritage_country_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_heritage_country_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: default
       row:
@@ -211,6 +341,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      use_ajax: false
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -219,6 +350,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
       tags:
         - 'config:field.storage.profile.field_first_name'
         - 'config:field.storage.profile.field_last_name'
@@ -234,6 +366,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
       tags:
         - 'config:field.storage.profile.field_first_name'
         - 'config:field.storage.profile.field_last_name'
