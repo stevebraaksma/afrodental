@@ -33,7 +33,7 @@ content:
     weight: 6
     region: content
     settings:
-      placeholder: ''
+      placeholder: '(the email displayed to other members to contact you)'
       size: 60
     third_party_settings: {  }
   field_first_name:
