@@ -45,6 +45,7 @@ settings:
     EG: EG
     GQ: GQ
     ER: ER
+    SZ: SZ
     ET: ET
     GA: GA
     GM: GM
@@ -62,13 +63,16 @@ settings:
     MW: MW
     ML: ML
     MQ: MQ
+    MR: MR
     MU: MU
+    MA: MA
     MZ: MZ
     NA: NA
     NE: NE
     NG: NG
     RE: RE
     RW: RW
+    ST: ST
     SN: SN
     SC: SC
     SL: SL
@@ -83,6 +87,7 @@ settings:
     TN: TN
     UG: UG
     US: US
+    EH: EH
     ZM: ZM
     ZW: ZW
 field_type: address_country
