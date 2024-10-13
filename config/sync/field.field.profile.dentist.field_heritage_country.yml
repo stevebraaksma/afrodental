@@ -20,5 +20,69 @@ default_value:
     value: NG
 default_value_callback: ''
 settings:
-  available_countries: {  }
+  available_countries:
+    DZ: DZ
+    AO: AO
+    BS: BS
+    BB: BB
+    BJ: BJ
+    BW: BW
+    BR: BR
+    BF: BF
+    BI: BI
+    CM: CM
+    CV: CV
+    CF: CF
+    TD: TD
+    CO: CO
+    KM: KM
+    CG: CG
+    CD: CD
+    CI: CI
+    CU: CU
+    DJ: DJ
+    DO: DO
+    EG: EG
+    GQ: GQ
+    ER: ER
+    ET: ET
+    GA: GA
+    GM: GM
+    GH: GH
+    GN: GN
+    GW: GW
+    GY: GY
+    HT: HT
+    JM: JM
+    KE: KE
+    LS: LS
+    LR: LR
+    LY: LY
+    MG: MG
+    MW: MW
+    ML: ML
+    MQ: MQ
+    MU: MU
+    MZ: MZ
+    NA: NA
+    NE: NE
+    NG: NG
+    RE: RE
+    RW: RW
+    SN: SN
+    SC: SC
+    SL: SL
+    SO: SO
+    ZA: ZA
+    SS: SS
+    SD: SD
+    SR: SR
+    TZ: TZ
+    TG: TG
+    TT: TT
+    TN: TN
+    UG: UG
+    US: US
+    ZM: ZM
+    ZW: ZW
 field_type: address_country
