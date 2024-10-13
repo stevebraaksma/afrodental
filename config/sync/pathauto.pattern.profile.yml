@@ -1,0 +1,14 @@
+uuid: f43d9aac-9137-4c75-844b-2527bc23969c
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: profile
+label: Dentist
+type: 'canonical_entities:user'
+pattern: 'dr/[current-user:dentist:field_first_name][current-user:dentist:field_last_name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }
