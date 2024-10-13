@@ -26,7 +26,7 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: '(city in the USA where you live)'
     third_party_settings: {  }
   field_email:
     type: email_default
