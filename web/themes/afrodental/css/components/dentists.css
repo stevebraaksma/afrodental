@@ -408,6 +408,6 @@ textarea {
 }
 
 /* Show modal when the checkbox is checked */
-#modal-toggle:checked ~ .modal-overlay {
+.modal-overlay.open {
   display: flex;
 }

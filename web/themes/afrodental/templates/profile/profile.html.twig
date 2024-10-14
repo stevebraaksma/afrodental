@@ -40,7 +40,7 @@
 
     {% if user.isAuthenticated %}
     <input type="checkbox" id="toggleCheckbox-{{ profile.id }}" class="toggle-checkbox">
-    <label for="toggleCheckbox-{{ profile.id }}" class="btn light">ContactB</label>
+    <label for="toggleCheckbox-{{ profile.id }}" class="btn light">Contact</label>
     <div class="card-contact-wrapper">
       {% if content.field_phone.0 is not empty %}
       <div class="card-contact phone">
@@ -52,26 +52,24 @@
           </svg>
           <a href='tel:{{ content.field_phone.0 }}'>{{ content.field_phone.0 }}</a>
       </div>
-    {% endif %}
-    {% if content.field_email.0 is not empty %}
-        <div class="card-contact email">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <path d="M22 6l-10 7L2 6"></path>
-            </svg>
-            <a href='mailto:{{ content.field_email.0 }}'>{{ content.field_email.0 }}</a>
-        </div>
-        {% endif %}
-        {% if content.field_phone.0 is empty and content.field_email.0 is empty %}
-        Contact info not shared
       {% endif %}
-    </div>
+      {% if content.field_email.0 is not empty %}
+          <div class="card-contact email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <path d="M22 6l-10 7L2 6"></path>
+              </svg>
+              <a href='mailto:{{ content.field_email.0 }}'>{{ content.field_email.0 }}</a>
+          </div>
+          {% endif %}
+          {% if content.field_phone.0 is empty and content.field_email.0 is empty %}
+          Contact info not shared
+        {% endif %}
+      </div>
 
 
     {% else %}
-      <a href="not-logged-in" class="btn light">Contact</a>
-
 
       <div class="trigger-modal btn light">Contact</div>
 
@@ -87,30 +85,38 @@
           <a class="btn" href="/user/register">Create Account</a>
         </div>
       </div>
+    {% endif %}
     
-    </article>
     
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-        // Add event listeners to all buttons with class "trigger-modal"
-        var modalToggle = document.getElementById("modal-toggle");
+        var modalOverlay = document.querySelector(".modal-overlay");
         var triggerButtons = document.querySelectorAll(".trigger-modal");
+        var closeButton = document.querySelector(".close-btn");
     
-        triggerButtons.forEach(function(button) {
-          button.addEventListener("click", function() {
-            modalToggle.checked = true; // Open the modal when any button is clicked
+        // Only proceed if there is at least one button
+        if (triggerButtons.length > 0) {
+          // Add event listeners to all buttons with class "trigger-modal"
+          triggerButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+              modalOverlay.classList.add("open"); // Add "open" class to show the modal
+            });
           });
-        });
     
-        // Close modal when clicking the overlay but not the modal itself
-        document.querySelector(".modal-overlay").addEventListener("click", function(event) {
-          if (!event.target.closest(".modal")) {
-            modalToggle.checked = false;
-          }
-        });
+          // Close modal when clicking the close button or the overlay (but not the modal itself)
+          closeButton.addEventListener("click", function() {
+            modalOverlay.classList.remove("open"); // Remove "open" class to hide the modal
+          });
+    
+          modalOverlay.addEventListener("click", function(event) {
+            if (!event.target.closest(".modal")) {
+              modalOverlay.classList.remove("open");
+            }
+          });
+        }
       });
     </script>
-    {% endif %}
+  
 
 
 
