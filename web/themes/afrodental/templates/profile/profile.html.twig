@@ -71,6 +71,45 @@
 
     {% else %}
       <a href="not-logged-in" class="btn light">Contact</a>
+
+
+      <div class="trigger-modal btn light">Contact</div>
+
+
+
+
+    
+      <div class="modal-overlay">
+        <div class="modal">
+          <label for="modal-toggle" class="close-btn">&#x2715;</label>
+          <a class="btn" href="/user/login">Login</a>
+          <div class="or">OR</div>
+          <a class="btn" href="/user/register">Create Account</a>
+        </div>
+      </div>
+    
+    </article>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Add event listeners to all buttons with class "trigger-modal"
+        var modalToggle = document.getElementById("modal-toggle");
+        var triggerButtons = document.querySelectorAll(".trigger-modal");
+    
+        triggerButtons.forEach(function(button) {
+          button.addEventListener("click", function() {
+            modalToggle.checked = true; // Open the modal when any button is clicked
+          });
+        });
+    
+        // Close modal when clicking the overlay but not the modal itself
+        document.querySelector(".modal-overlay").addEventListener("click", function(event) {
+          if (!event.target.closest(".modal")) {
+            modalToggle.checked = false;
+          }
+        });
+      });
+    </script>
     {% endif %}
 
 
