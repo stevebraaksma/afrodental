@@ -88,8 +88,25 @@
     <div>{{ content.field_state.0 }}</div>
   </div>
 
-  <input type="checkbox" id="toggleCheckbox-{{ node.id }}" class="toggle-checkbox">
-  <label for="toggleCheckbox-{{ node.id }}" class="btn light">Contact</label>
+
+
+
+  {% if user.isAuthenticated %}
+  <input type="checkbox" id="toggleCheckbox-{{ user.id }}" class="toggle-checkbox">
+  <label for="toggleCheckbox-{{ user.id }}" class="btn light">Contact</label>
+  {% else %}
+    <!-- Link for anonymous users -->
+    <a href="not-logged-in" class="btn light">Contact</a>
+  {% endif %}
+
+
+
+
+
+
+
+
+
   <div class="card-contact-wrapper">
     {% if content.field_phone.0 is not empty %}
     <div class="card-contact phone">

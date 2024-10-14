@@ -103,4 +103,36 @@
     
   </div>
 
+
+  <input type="checkbox" id="modal-toggle" style="display: none" />
+  <label for="modal-toggle" class="open-modal-btn">Open Modal</label>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <label for="modal-toggle" class="close-btn">&#x2715;</label>
+      <a class="btn" href="/user/login">Login</a>
+      <div class="or">OR</div>
+      <a class="btn" href="/user/register">Create Account</a>
+    </div>
+  </div>
+
 </article>
+
+<script>
+  // Close modal when clicking the overlay, but not the modal itself
+
+  document.addEventListener("DOMContentLoaded", (event) => {
+      document
+          .querySelector(".modal-overlay")
+          .addEventListener("click", function (event) {
+              if (!event.target.closest(".modal")) {
+                  document.getElementById("modal-toggle").checked = false;
+              }
+          });
+  });
+</script>
+
+
+
+
+
