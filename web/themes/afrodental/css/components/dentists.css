@@ -16,6 +16,8 @@ body {
   font-family: Montserrat;
   color: #b3afbf;
   padding: 24px;
+  max-width: 1408px;
+  margin: auto;
 }
 
 a {
