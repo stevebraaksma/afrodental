@@ -8,4 +8,6 @@ id: front
 label: 'Front page'
 tags:
   canonical_url: '[site:url]'
+  description: 'Connect with other black dentists for networking and mentoring'
   shortlink: '[site:url]'
+  title: AfroDental
