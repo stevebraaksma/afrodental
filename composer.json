@@ -26,6 +26,7 @@
         "drupal/core-recommended": "^10.3",
         "drupal/critical_css": "^2.0",
         "drupal/masquerade": "^2.0",
+        "drupal/metatag": "^2.0",
         "drupal/node_view_permissions": "^1.6",
         "drupal/pathauto": "^1.13",
         "drupal/profile": "^1.11",
