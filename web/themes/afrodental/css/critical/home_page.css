@@ -1,0 +1,144 @@
+.hidden {
+  display: none;
+}
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  word-wrap: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+a {
+  background-color: transparent;
+}
+img {
+  border-style: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+ul.menu {
+  margin-left: 1em;
+  padding: 0;
+  list-style: none outside;
+  text-align: left;
+}
+.menu-item {
+  margin: 0;
+  padding-top: 0.2em;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #222;
+  font-family: Montserrat;
+  color: #b3afbf;
+  padding: 24px;
+}
+a {
+  font-family: Montserrat;
+  color: #b3afbf;
+}
+.menu a {
+  font-size: 20px;
+}
+.btn {
+  margin: 30px 0px;
+  background: #7ce3ff;
+  padding: 10px 25px;
+  border-radius: 3px;
+  border: 1px solid #7ce3ff;
+  font-weight: bold;
+  font-family: Montserrat;
+  color: #222;
+  display: inline-block;
+  text-decoration: none;
+}
+.navigation.menu--account {
+  display: flex;
+}
+ul.menu {
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}
+.layout-container {
+  margin: 0 !important;
+}
+h1 {
+  font-family: var(--aw-font-heading, ui-sans-serif), ui-sans-serif, system-ui,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(229 231 235);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.page-node-type-home-page {
+  text-align: center;
+}
+.eyebrow {
+  color: rgb(191 219 254);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding-top: 3rem;
+}
+.intro {
+  color: rgb(203 213 225);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.btn-cta {
+  border-radius: 9999px;
+  padding: 18px 32px;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  .eyebrow {
+    padding-top: 5rem;
+  }
+}
