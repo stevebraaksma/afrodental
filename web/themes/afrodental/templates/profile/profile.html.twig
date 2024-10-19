@@ -26,7 +26,18 @@
 
   <div class="card">
     <div class="cover-photo">
-        <img src="https://i.imgur.com/KykRUCV.jpeg" alt="user-profile" class="profile">
+
+        {% if content.field_pic.0 is not empty %}
+        {% set image_url = content.field_pic.0['#item'].entity.fileuri %}
+
+            <img class="profile" src="{{ file_url(image_url) }}" alt="Profile Picture">
+
+        {% else %}
+        <div >
+
+          <svg class="profile absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+        </div>
+        {% endif %}
     </div>
     <h3 class="profile-name">{{ content.field_first_name.0 }} {{ content.field_last_name.0 }}</h3>
     <p class="about">{{ content.field_heritage_region.0 }} / {{ content.field_heritage_country.0 }}<br>
