@@ -12,6 +12,15 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.region-primary-menu a[href="/"] {
+  font-weight: 700;
+  color: rgb(229, 231, 235);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2em;
+  text-decoration: none;
+}
+
 .page-node-type-home-page {
   text-align: center;
 }

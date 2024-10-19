@@ -26,6 +26,14 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+.region-primary-menu a[href="/"] {
+  font-weight: 700;
+  color: rgb(229, 231, 235);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2em;
+  text-decoration: none;
+}
 a {
   background-color: transparent;
 }
