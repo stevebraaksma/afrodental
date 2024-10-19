@@ -1,0 +1,38 @@
+uuid: 5cd96aee-de70-4a69-bf4a-74f41402b852
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_pic
+    - profile.type.dentist
+  module:
+    - image
+id: profile.dentist.field_pic
+field_name: field_pic
+entity_type: profile
+bundle: dentist
+label: Pic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: '1 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: 'profile pic'
+    title: ''
+    width: null
+    height: null
+field_type: image

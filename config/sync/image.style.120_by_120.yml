@@ -1,0 +1,21 @@
+uuid: cf7fdcc5-9fe6-4235-8758-f040fb629bea
+langcode: en
+status: true
+dependencies: {  }
+name: 120_by_120
+label: '120 by 120'
+effects:
+  4d619558-4e3a-499e-a4f8-4860609beb51:
+    uuid: 4d619558-4e3a-499e-a4f8-4860609beb51
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 120
+      height: 120
+      anchor: center-center
+  ad25662d-98f0-4f99-b68a-c9035f21ca46:
+    uuid: ad25662d-98f0-4f99-b68a-c9035f21ca46
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

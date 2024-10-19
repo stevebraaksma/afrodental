@@ -1,0 +1,89 @@
+uuid: cf69f045-f62c-4240-938a-b2164d623dfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dentist.body
+    - field.field.node.dentist.field_city
+    - field.field.node.dentist.field_email
+    - field.field.node.dentist.field_first_name
+    - field.field.node.dentist.field_heritage
+    - field.field.node.dentist.field_heritage_country
+    - field.field.node.dentist.field_last_name
+    - field.field.node.dentist.field_phone
+    - field.field.node.dentist.field_state
+    - node.type.dentist
+  module:
+    - address
+    - telephone
+id: node.dentist.default
+targetEntityType: node
+bundle: dentist
+mode: default
+content:
+  field_city:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_first_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_heritage:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_heritage_country:
+    type: address_country_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_last_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone:
+    type: telephone_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_state:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

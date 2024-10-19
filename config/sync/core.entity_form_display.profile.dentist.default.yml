@@ -1,0 +1,92 @@
+uuid: b5aff7c9-ec8a-4fb5-a3a4-818f8cf40b10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.dentist.field_city
+    - field.field.profile.dentist.field_email
+    - field.field.profile.dentist.field_first_name
+    - field.field.profile.dentist.field_heritage_country
+    - field.field.profile.dentist.field_heritage_region
+    - field.field.profile.dentist.field_last_name
+    - field.field.profile.dentist.field_phone
+    - field.field.profile.dentist.field_pic
+    - field.field.profile.dentist.field_state
+    - image.style.thumbnail
+    - profile.type.dentist
+  module:
+    - address
+    - image
+    - telephone
+id: profile.dentist.default
+targetEntityType: profile
+bundle: dentist
+mode: default
+content:
+  field_city:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: '(city in the USA where you live)'
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 6
+    region: content
+    settings:
+      placeholder: '(the email displayed to other members to contact you)'
+      size: 60
+    third_party_settings: {  }
+  field_first_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_heritage_country:
+    type: address_country_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_heritage_region:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_last_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone:
+    type: telephone_default
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_pic:
+    type: image_image
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_state:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  is_default: true

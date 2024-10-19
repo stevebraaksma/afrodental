@@ -1,0 +1,65 @@
+uuid: bcdd4b89-1714-4014-8dee-fcd35abe9cc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.overview_page.body
+    - node.type.overview_page
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          ce3917b1-73d7-4357-86e1-8cb9b9426759:
+            uuid: ce3917b1-73d7-4357-86e1-8cb9b9426759
+            region: content
+            configuration:
+              id: 'extra_field_block:node:overview_page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          b4b55423-84aa-409b-b7f7-a8b3afba66b1:
+            uuid: b4b55423-84aa-409b-b7f7-a8b3afba66b1
+            region: content
+            configuration:
+              id: 'field_block:node:overview_page:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.overview_page.default
+targetEntityType: node
+bundle: overview_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
